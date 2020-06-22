@@ -7,8 +7,8 @@ public final class TextUtils {
     }
 
     public static int getCharactersNumberWithoutWhitespaces(String text) {
-        String textWithoutWhitespace = text.replace(" ", "");
-        return textWithoutWhitespace.length();
+        String textWithoutWhitespaces = text.replaceAll(" ", "");
+        return textWithoutWhitespaces.length();
     }
 
     public static int getWordsNumber(String text) {
